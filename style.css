@@ -1,0 +1,35 @@
+h1 {
+  color: blue;
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
