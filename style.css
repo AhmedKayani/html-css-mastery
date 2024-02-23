@@ -1,19 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  border-top: #00b7b7 solid 5px;
+}
+
 h1 {
   color: blue;
   font-family: sans-serif;
   font-size: 24px;
   text-transform: uppercase;
   font-style: italic;
+  margin-bottom: 8px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 6px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #3c3c3c;
+}
+
+h1,
+h2,
+h3 {
+  color: #00b7b7;
 }
 
 h2 {
   font-family: sans-serif;
   font-size: 32px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  display: inline-block;
+  background-color: #ffff11;
+  color: #444;
+  font-size: 16px;
+  padding: 5px 10px;
+  position: absolute;
+  right: -25px;
+  top: -10px;
 }
 
 h3 {
   font-family: sans-serif;
   font-size: 24px;
+  margin-bottom: 15px;
 }
 
 h4 {
@@ -21,15 +66,108 @@ h4 {
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
 }
 
 p {
   font-family: sans-serif;
   line-height: 1.5;
   font-size: 22px;
+  margin-bottom: 20px;
 }
 
 li {
   font-family: sans-serif;
   font-size: 20px;
+}
+
+.nav-header {
+  background-color: #f4f4f4;
+  padding: 26px 35px;
+  margin-bottom: 25px;
+}
+
+nav a {
+  margin-right: 40px;
+}
+
+.post-header {
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+#author {
+  font-style: italic;
+  font-size: 16px;
+}
+
+ul,
+ol {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+aside {
+  border-top: #00b7b7 solid 5px;
+  border-bottom: #00b7b7 solid 5px;
+  background-color: #f4f4f4;
+  padding: 30px 0;
+  margin-bottom: 25px;
+  width: 60%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #00b7b7;
+}
+
+a:visited {
+  color: #00b7b7;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  color: orange;
+  text-decoration: underline orange;
+  font-style: italic;
+}
+
+.like-btn {
+  padding: 10px;
+  font-size: 16px;
+  position: absolute;
+  right: 50px;
+  bottom: 100px;
 }
