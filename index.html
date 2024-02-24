@@ -9,8 +9,8 @@
 
   <body>
     <div class="container">
-      <header class="nav-header">
-        <h1>📘 The Code Magazine</h1>
+      <header class="nav-header clear-fix">
+        <h1 class="">📘 The Code Magazine</h1>
         <nav>
           <a href="blog.html">Blog</a>
           <a href="#">Challenges</a>
@@ -28,9 +28,10 @@
             alt="Image of author"
             width="50"
             height="50"
+            class="author-pic"
           />
 
-          <p id="author">
+          <p id="author" class="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
           </p>
 
@@ -101,43 +102,44 @@
 
         <p>Hopefully you learned something new here. See you next time!</p>
 
-        <aside>
-          <h4>Related posts</h4>
-          <ul>
-            <li>
-              <img
-                src="/pictures/related-1.jpg"
-                alt="Picture of person coding"
-                width="75"
-                height="75"
-              />
-              <a href="#">How to Learn Web Development</a>
-              <p class="related-author">By Jonas Schmedtmann</p>
-            </li>
-            <li>
-              <img
-                src="/pictures/related-2.jpg"
-                alt="Lightening image"
-                width="75"
-                height="75"
-              />
-              <a href="#">The Unknown Powers of CSS</a>
-              <p class="related-author">By Jim Dillion</p>
-            </li>
-            <li>
-              <img
-                src="/pictures/related-3.jpg"
-                alt="Code editor picture"
-                width="75"
-                height="75"
-              />
-              <a href="#">How to Learn Web Development</a>
-              <p class="related-author">By Matilda</p>
-            </li>
-          </ul>
-        </aside>
         <button class="like-btn">💖 Like</button>
       </article>
+
+      <aside>
+        <h4>Related posts</h4>
+        <ul>
+          <li>
+            <img
+              src="/pictures/related-1.jpg"
+              alt="Picture of person coding"
+              width="75"
+              height="75"
+            />
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Jonas Schmedtmann</p>
+          </li>
+          <li>
+            <img
+              src="/pictures/related-2.jpg"
+              alt="Lightening image"
+              width="75"
+              height="75"
+            />
+            <a href="#">The Unknown Powers of CSS</a>
+            <p class="related-author">By Jim Dillion</p>
+          </li>
+          <li>
+            <img
+              src="/pictures/related-3.jpg"
+              alt="Code editor picture"
+              width="75"
+              height="75"
+            />
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Matilda</p>
+          </li>
+        </ul>
+      </aside>
 
       <footer>
         <p id="copyright">Copyright &copy; 2027 by The Code Magazine</p>

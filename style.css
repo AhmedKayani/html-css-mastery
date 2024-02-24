@@ -1,25 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: sans-serif;
   border-top: #00b7b7 solid 5px;
-}
-
-h1 {
-  color: blue;
-  font-family: sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-
-h1::first-letter {
-  font-style: normal;
-  margin-right: 6px;
 }
 
 h1,
@@ -34,6 +21,39 @@ h1,
 h2,
 h3 {
   color: #00b7b7;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  float: left;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 6px;
+}
+
+.nav-header {
+  background-color: #f4f4f4;
+  padding: 26px 35px;
+  margin-bottom: 25px;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-right: 22px;
+  display: inline-block;
+  padding-top: 6px;
+}
+
+nav a:last-child {
+  margin-right: 0;
 }
 
 h2 {
@@ -70,7 +90,7 @@ h4 {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -85,16 +105,6 @@ p {
 li {
   font-family: sans-serif;
   font-size: 20px;
-}
-
-.nav-header {
-  background-color: #f4f4f4;
-  padding: 26px 35px;
-  margin-bottom: 25px;
-}
-
-nav a {
-  margin-right: 40px;
 }
 
 .post-header {
@@ -143,6 +153,10 @@ aside {
   width: 60%;
 }
 
+aside li {
+  list-style: none;
+}
+
 a:link {
   text-decoration: none;
   color: #00b7b7;
@@ -170,4 +184,35 @@ a:active {
   position: absolute;
   right: 50px;
   bottom: 100px;
+}
+
+.author-pic {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-left: 15px;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+
+.clear-fix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
