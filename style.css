@@ -28,7 +28,7 @@ h1 {
   font-size: 24px;
   text-transform: uppercase;
   font-style: italic;
-  float: left;
+  /* float: left; */
 }
 
 h1::first-letter {
@@ -40,10 +40,8 @@ h1::first-letter {
   background-color: #f4f4f4;
   padding: 26px 35px;
   margin-bottom: 25px;
-}
-
-nav {
-  float: right;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav a {
@@ -93,6 +91,15 @@ h4 {
   width: 1200px;
   margin: 0 auto;
   position: relative;
+  /* display: flex;
+  flex-direction: column;
+  align-items: stretch; */
+}
+
+.article-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 p {
@@ -186,33 +193,29 @@ a:active {
   bottom: 100px;
 }
 
-.author-pic {
-  float: left;
+.author-container {
+  display: flex;
 }
 
 .author {
-  float: left;
+  /* float: left; */
   margin-left: 15px;
   margin-top: 12px;
   margin-bottom: 32px;
 }
 
-.clear-fix::after {
+/* .clear-fix::after {
   clear: both;
   content: "";
   display: block;
-}
+} */
 
 article {
   width: 825px;
-  float: left;
+  /* float: left; */
 }
 
 aside {
   width: 300px;
-  float: right;
-}
-
-footer {
-  clear: both;
+  /* float: right; */
 }
