@@ -42,12 +42,12 @@ h1::first-letter {
   margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav a {
   margin-right: 22px;
   display: inline-block;
-  padding-top: 6px;
 }
 
 nav a:last-child {
@@ -147,7 +147,7 @@ li:last-child {
 }
 
 .related-author {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -195,13 +195,17 @@ a:active {
 
 .author-container {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 22px;
 }
 
 .author {
   /* float: left; */
-  margin-left: 15px;
-  margin-top: 12px;
-  margin-bottom: 32px;
+  /* margin-left: 15px; */
+
+  margin-bottom: 0;
 }
 
 /* .clear-fix::after {
@@ -209,6 +213,8 @@ a:active {
   content: "";
   display: block;
 } */
+
+/* Related posts */
 
 article {
   width: 825px;
@@ -218,4 +224,29 @@ article {
 aside {
   width: 300px;
   /* float: right; */
+}
+
+aside ul {
+  padding: 0 20px;
+}
+
+/* aside ul li img {
+  width: 50px;
+  height: auto;
+} */
+
+aside ul li a {
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.related-post-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
 }
